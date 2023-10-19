@@ -139,7 +139,7 @@ public class PizzaRendeloAlkalmazas extends javax.swing.JFrame {
 
         lblajandekszosz.setText("1 db Ajándék Szósz:");
 
-        cbxszosz.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Szószok", "Csípős", "Ketchup", "BBQ", "Fokhagymás tejföl" }));
+        cbxszosz.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Csípős", "Ketchup", "BBQ", "Fokhagymás tejföl" }));
         cbxszosz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxszoszActionPerformed(evt);
@@ -148,7 +148,7 @@ public class PizzaRendeloAlkalmazas extends javax.swing.JFrame {
 
         lblajandekudito.setText("1 db Ajándék Üdítő:");
 
-        cbxudito.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Üdítők", "Coca Cola Zero", "Sprite", "Pepsi Zero", "Fanta", "Lipton Citromos Ice Tea" }));
+        cbxudito.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Coca Cola Zero", "Sprite", "Pepsi Zero", "Fanta", "Lipton Citromos Ice Tea" }));
         cbxudito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxuditoActionPerformed(evt);
@@ -191,26 +191,26 @@ public class PizzaRendeloAlkalmazas extends javax.swing.JFrame {
                             .addComponent(lblajandekudito, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cbxszosz, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cbxudito, 0, 1, Short.MAX_VALUE)))
+                            .addComponent(cbxszosz, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbxudito, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(lblpizzakep, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(labelweboldal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(21, 21, 21))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(132, 132, 132)
-                .addComponent(labelcim)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(labelweboldal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(132, 132, 132)
+                        .addComponent(labelcim)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
