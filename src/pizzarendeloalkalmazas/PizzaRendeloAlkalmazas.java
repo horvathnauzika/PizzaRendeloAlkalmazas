@@ -296,7 +296,7 @@ public class PizzaRendeloAlkalmazas extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.out.println("A rendelésedet rögzítettük!");
-        System.exit(0);
+        JOptionPane.showMessageDialog(null, "Tesztverzió");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /*
